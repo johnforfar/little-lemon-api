@@ -1,3 +1,5 @@
+# ./LittleLemon/settings.py
+
 """
 Django settings for LittleLemon project.
 
@@ -37,7 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'LittleLemonAPI',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
