@@ -1,4 +1,4 @@
-# ./urls.py
+# ./LittleLemon/urls.py
 
 """
 URL configuration for LittleLemon project.
@@ -23,4 +23,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('LittleLemonAPI.urls')),
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.jwt')),
 ]
